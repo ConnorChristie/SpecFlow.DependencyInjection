@@ -39,17 +39,17 @@ namespace SolidToken.SpecFlow.DependencyInjection.Tests
     }
 
     [Binding]
-    public class WebDriverSupport
+    public class BeforeScenarioTest
     {
         private readonly IObjectContainer objectContainer;
 
-        public WebDriverSupport(IObjectContainer objectContainer)
+        public BeforeScenarioTest(IObjectContainer objectContainer)
         {
             this.objectContainer = objectContainer;
         }
 
         [BeforeScenario]
-        public void InitializeWebDriver()
+        public void InitializeBeforeScenarioTest()
         {
 
         }
